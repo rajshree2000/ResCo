@@ -40,7 +40,7 @@ We were able to develop a flutter based app partially. We learnt about construct
 
 ## Current Work
 ### Stories Section
-![ezgif com-gif-maker(2)](https://user-images.githubusercontent.com/43843585/115155900-8665e100-a09f-11eb-945b-48ba512c114c.gif) { width=50% }
+![ezgif com-gif-maker(2)](https://user-images.githubusercontent.com/43843585/115155900-8665e100-a09f-11eb-945b-48ba512c114c.gif){ width=50% }.
 ### Login and Product Explore Section
-![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/43843585/115155939-b3b28f00-a09f-11eb-92a8-ce6c2899fb7a.gif) { width=50% }
+![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/43843585/115155939-b3b28f00-a09f-11eb-92a8-ce6c2899fb7a.gif){ width=50% }.
 
