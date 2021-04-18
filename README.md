@@ -35,18 +35,15 @@ We were able to develop a flutter based app partially. We learnt about construct
 ✅ Reduce carbon consumption extensively.<br>
 
 ## Current Work
-<br>
 ## Prototype
-<br>
 ![ezgif com-gif-maker(5)](https://user-images.githubusercontent.com/43843585/115156262-08a2d500-a0a1-11eb-99b3-3354ef6838f5.gif)
-<br>
 
 ### Stories Section
-<br>
+
 ![ezgif com-gif-maker(7)](https://user-images.githubusercontent.com/43843585/115156324-53245180-a0a1-11eb-9622-f36d578f1807.gif)
-<br>
+
 ### Login and Product Explore Section
-<br>
+
 ![ezgif com-gif-maker(6)](https://user-images.githubusercontent.com/43843585/115156301-34be5600-a0a1-11eb-8c9d-185d29d84ab1.gif)
 
 
