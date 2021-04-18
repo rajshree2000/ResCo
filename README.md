@@ -34,13 +34,19 @@ We were able to develop a flutter based app partially. We learnt about construct
 ✅ Decentralizing the system with Campus focused groups.<br>
 ✅ Reduce carbon consumption extensively.<br>
 
-
-
-## Prototype
-![ezgif com-gif-maker(5)](https://user-images.githubusercontent.com/43843585/115156262-08a2d500-a0a1-11eb-99b3-3354ef6838f5.gif)
 ## Current Work
+<br>
+## Prototype
+<br>
+![ezgif com-gif-maker(5)](https://user-images.githubusercontent.com/43843585/115156262-08a2d500-a0a1-11eb-99b3-3354ef6838f5.gif)
+<br>
+
 ### Stories Section
-![ezgif com-gif-maker(2), 50%](https://user-images.githubusercontent.com/43843585/115155900-8665e100-a09f-11eb-945b-48ba512c114c.gif)
+<br>
+![ezgif com-gif-maker(7)](https://user-images.githubusercontent.com/43843585/115156324-53245180-a0a1-11eb-9622-f36d578f1807.gif)
+<br>
 ### Login and Product Explore Section
-![ezgif com-gif-maker(1) , 50%](https://user-images.githubusercontent.com/43843585/115155939-b3b28f00-a09f-11eb-92a8-ce6c2899fb7a.gif)
+<br>
+![ezgif com-gif-maker(6)](https://user-images.githubusercontent.com/43843585/115156301-34be5600-a0a1-11eb-8c9d-185d29d84ab1.gif)
+
 
