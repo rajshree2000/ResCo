@@ -18,18 +18,18 @@ While designing the structure of the social startup, we had be very careful leav
 Our team is still new to dart and firebase, so it took alot of time in setting up the initials.
 ## Accomplishments that we're proud of
 ✅ Donate easily. Our network of NGOs will connect with you. <br>
-✅ Submit request for any requirement and explore donations.
-✅ Proper authentication before donation passed on.
-✅ Read how your donation helped someone.
-✅ No direct contact between donator and donate.
-✅ Privacy maintained at all stages.
+✅ Submit request for any requirement and explore donations.<br>
+✅ Proper authentication before donation passed on.<br>
+✅ Read how your donation helped someone.<br>
+✅ No direct contact between donator and donate.<br>
+✅ Privacy maintained at all stages.<br>
 
 ## What we learned
 We were able to develop a flutter based app partially. We learnt about constructing structure of a business and network based app. We also learnt about tackling various privacy issues one can raise for an app.
 
 ## What's next for ResCo
-✅ Creating a all volunteer driven social startup.
-✅ Connecting with NGOs.
-✅ Growing the reach.
-✅ Decentralizing the system with Campus focused groups.
-✅ Reduce carbon consumption extensively.
+✅ Creating a all volunteer driven social startup.<br>
+✅ Connecting with NGOs.<br>
+✅ Growing the reach.<br>
+✅ Decentralizing the system with Campus focused groups.<br>
+✅ Reduce carbon consumption extensively.<br>
