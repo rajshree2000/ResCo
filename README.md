@@ -1,5 +1,3 @@
-# ResCo
-
 ## Inspiration
 With increasing production of electronic devices, the carbon emission is also increasing drastically.
 Even the process like recycling have a high usage of resources like water and electricity which are also (though in lesser quantities) degrading the environment. UN has set up Sustainable Development Goals which set up certain goals that we need to match up in future. Sustainable Development Goal 12 is about "responsible consumption and production" and Sustainable Development Goal 13 is about climate action.
@@ -19,6 +17,12 @@ We did an extensive research on miro. Due to the virtual environment, most of th
 While designing the structure of the social startup, we had be very careful leaving minimal loopholes and keep privacy of user safe at all the stages.
 Our team is still new to dart and firebase, so it took alot of time in setting up the initials.
 ## Accomplishments that we're proud of
+✅ Donate easily. Our network of NGOs will connect with you. <br>
+✅ Submit request for any requirement and explore donations.
+✅ Proper authentication before donation passed on.
+✅ Read how your donation helped someone.
+✅ No direct contact between donator and donate.
+✅ Privacy maintained at all stages.
 
 ## What we learned
 We were able to develop a flutter based app partially. We learnt about constructing structure of a business and network based app. We also learnt about tackling various privacy issues one can raise for an app.
