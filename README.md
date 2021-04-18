@@ -37,7 +37,7 @@ We were able to develop a flutter based app partially. We learnt about construct
 
 
 ## Prototype
-
+![ezgif com-gif-maker(5)](https://user-images.githubusercontent.com/43843585/115156262-08a2d500-a0a1-11eb-99b3-3354ef6838f5.gif)
 ## Current Work
 ### Stories Section
 ![ezgif com-gif-maker(2), 50%](https://user-images.githubusercontent.com/43843585/115155900-8665e100-a09f-11eb-945b-48ba512c114c.gif)
