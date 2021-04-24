@@ -1,8 +1,11 @@
+import 'dart:convert';
+
 import 'package:e_market/lastScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'item_widget.dart';
-import 'models/catalog.dart';
+import 'models/catalog1.dart';
 
 class ScreenOne extends StatefulWidget {
   @override
@@ -11,42 +14,19 @@ class ScreenOne extends StatefulWidget {
 
 class _ScreenOneState extends State<ScreenOne> {
 
-  List<Card> _buildGridCards(int count) {
-    List<Card> cards = List.generate(
-      count,
-          (int index) => Card(
-            clipBehavior: Clip.antiAlias,
-            child: InkWell(
-              onTap: (){},
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                AspectRatio(
-                 aspectRatio: 18.0 / 11.0,
-                 child: Image.asset('assets/p1.jpg'),
-              ),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
-                  child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text('Title'),
-                    SizedBox(height: 8.0),
-                    Text('Secondary Text'),
-                  ],
-                ),
-              ),
-          ],
-        ),
-            ),
-      ),
-    );
-    return cards;
+  @override
+  void initState() {
+    super.initState();
+    loadData();
   }
 
-
-
-
+  loadData() async {
+    final catalogJson = await rootBundle.loadString("assets/files/catalog.json");
+    final decodeData = jsonDecode(catalogJson);
+    var productData = decodeData["products"];
+    CatalogModel.items = List.from(productData).map<Item>((item) => Item.fromMap(item)).toList();
+    setState(() {});
+  }
 
 
   @override
@@ -63,64 +43,34 @@ class _ScreenOneState extends State<ScreenOne> {
         ),
       ),
 
-
-      body: GridView.count(
-        crossAxisCount: 2,
+      body: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+       ? GridView.builder(
         padding: EdgeInsets.all(16.0),
-        childAspectRatio: 8.0/9.0,
-        //children: _buildGridCards(10),
-        children: <Widget>[
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => FinalScreen()),
-              );
-            },
-            child: Card(
-              shadowColor: Colors.black38,
-              //clipBehavior: Clip.antiAlias,
-              child: Image.asset("assets/phone.jpeg" , fit: BoxFit.cover,),
-            ),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 8.0/9.0,
           ),
-          Card(
-            shadowColor: Colors.black38,
-            //clipBehavior: Clip.antiAlias,
-            child: Image.asset("assets/tablet.jpeg" , fit: BoxFit.cover,),
-          ),
-          Card(
-            shadowColor: Colors.black38,
-            //clipBehavior: Clip.antiAlias,
-            child: Image.asset("assets/laptops.jpg" , fit: BoxFit.cover,),
-          ),
-          Card(
-            shadowColor: Colors.black38,
-            //clipBehavior: Clip.antiAlias,
-            child: Image.asset("assets/fitbands.jpeg" , fit: BoxFit.cover,),
-          ),
-          Card(
-            shadowColor: Colors.black38,
-            //clipBehavior: Clip.antiAlias,
-            child: Image.asset("assets/head.jpeg" , fit: BoxFit.cover,),
-          ),
-          Card(
-            shadowColor: Colors.black38,
-            //clipBehavior: Clip.antiAlias,
-            child: Image.asset("assets/cam.jpeg" , fit: BoxFit.cover,),
-          ),
-          Card(
-            shadowColor: Colors.black38,
-            //clipBehavior: Clip.antiAlias,
-            child: Image.asset("assets/ref.jpeg" , fit: BoxFit.cover,),
-          ),
-          Card(
-            shadowColor: Colors.black38,
-            //clipBehavior: Clip.antiAlias,
-            child: Image.asset("assets/st.jpeg" , fit: BoxFit.cover,),
-          ),
-        ],
-
+          itemBuilder: (context,index){
+            final item = CatalogModel.items[index];
+            return InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FinalScreen(item: item,)),
+                );
+              },
+              child: Card(
+                child: GridTile(
+                    child: Image.asset(item.image , fit: BoxFit.cover,)
+                ),
+              ),
+            );
+          },
+        itemCount: CatalogModel.items.length,
+      ) : Center(
+        child: CircularProgressIndicator(),
       ),
     );
   }
+
 }

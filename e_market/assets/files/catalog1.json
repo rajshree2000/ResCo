@@ -1,0 +1,44 @@
+{
+	"frontImages":[
+	    {
+	       "id":1,
+	       "image":"assets/phone.jpeg"
+	    },
+
+	    { 
+	       "id":2,
+	       "image":"assets/tablet.jpeg"
+	    },
+
+	    {
+	       "id": 3,
+	       "image":"assets/laptops.jpg"
+	    },
+
+	    {
+	       "id": 4,
+	       "image": "assets/fitbands.jpeg"
+	    },
+
+	    {
+	       "id":5,
+	       "image": "assets/head.jpeg"
+	    },
+
+	    {
+	      "id": 6,
+	      "image": "assets/cam.jpeg"
+	    },
+	    
+	    {
+			"id": 7,
+			"image": "assets/st.jpeg"
+		},
+
+		{
+			"id": 8,
+			"image": "assets/ref.jpeg"
+		}
+	]
+	
+}
